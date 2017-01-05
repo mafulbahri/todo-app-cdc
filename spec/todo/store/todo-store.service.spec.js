@@ -1,12 +1,12 @@
 describe('TodoStore service', () => {
-  var todoStore;  
+  let todoStore;
 
   // Instantiate Angular JS context / load our todo.components module
   beforeEach(angular.mock.module('todo.components'));
 
   // Get instance of todoStrore with mocked dependencies from Angular JS context 
   // (set our injected todoStore factory (_todoStore_) to our local todoStore variable)
-  beforeEach(angular.mock.inject(function(_todoStore_) {
+  beforeEach(angular.mock.inject((_todoStore_) => {
     todoStore = _todoStore_;
   }));
 
