@@ -5,7 +5,7 @@
       type="checkbox"
       ng-checked="$ctrl.completed"
       ng-click="$ctrl.toggleTodo()">
-    <label>{{$ctrl.description}}</label>
+    <label id="todo-item-{{$ctrl.index}}'">{{$ctrl.description}}</label>
     <button class="destroy" ng-click="$ctrl.deleteTodo()"></button>
   </div>
   <form ng-submit="$ctrl.updateTodo()">
